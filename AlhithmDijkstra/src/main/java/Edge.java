@@ -1,6 +1,3 @@
-/**
- * Created by Vlad Badilovskii on 24.02.2017.
- */
 public class Edge {
     private final String id;
     private final Vertex source;
@@ -17,6 +14,7 @@ public class Edge {
     public String getId() {
         return id;
     }
+
     public Vertex getDestination() {
         return destination;
     }
@@ -24,6 +22,7 @@ public class Edge {
     public Vertex getSource() {
         return source;
     }
+
     public int getWeight() {
         return weight;
     }

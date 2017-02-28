@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AlgorithmDijkstra.iml" filepath="$PROJECT_DIR$/AlgorithmDijkstra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlhithmDijkstra.iml" filepath="$PROJECT_DIR$/AlhithmDijkstra.iml" />
     </modules>
   </component>
 </project>

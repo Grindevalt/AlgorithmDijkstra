@@ -2,8 +2,9 @@
  * Created by Vlad Badilovskii on 24.02.2017.
  */
 public class Vertex {
-    final private int id;
-    final private String name;
+
+    private final int id;
+    private final String name;
 
     public Vertex(int id, String name) {
         this.id = id;
@@ -13,7 +14,6 @@ public class Vertex {
     public Vertex(int id) {
         this.id = id;
         this.name = "unnamed";
-
     }
 
     @Override
@@ -37,8 +37,6 @@ public class Vertex {
     @Override
     public String toString() {
         return "Vertex{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
+                "id=" + id + "}";
     }
 }
