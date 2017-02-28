@@ -9,26 +9,22 @@ public class Graph {
     private final List<Vertex> vertexes;
     private final List<Edge> edges;
 
+    private Graph(List<Vertex> vertexes, List<Edge> edges) {
+        this.vertexes = Collections.unmodifiableList(vertexes);
+        this.edges = Collections.unmodifiableList(edges);
+    }
+
     public List<Edge> getEdges() {
         return edges;
     }
-    public List<Vertex> getVertexes(){
+
+    public List<Vertex> getVertexes() {
         return vertexes;
     }
 
     public static class Builder {
-        private List<Vertex> vertexes = new ArrayList<Vertex>();
-        private List<Edge> edges = new ArrayList<Edge>();
-
-        public Builder addVertex(Vertex vertex) {
-            this.vertexes.add(vertex);
-            return this;
-        }
-
-        public Builder addVertexes(List<Vertex> vertexes) {
-            this.vertexes.addAll(vertexes);
-            return this;
-        }
+        private List<Vertex> vertexes = new ArrayList<>();
+        private List<Edge> edges = new ArrayList<>();
 
         public Builder addEdge(int sourceLocNo, int destLocNo, int duration) {
             vertexCheckAvailability(sourceLocNo);
@@ -39,8 +35,7 @@ public class Graph {
         }
 
         private void vertexCheckAvailability(int id) {
-            //или добавлять или выбрасывать ошибку
-            while(vertexes.size() < id + 1 ){
+            while (vertexes.size() < id + 1) {
                 vertexes.add(new Vertex(vertexes.size()));
             }
         }
@@ -48,11 +43,6 @@ public class Graph {
         public Graph build() {
             return new Graph(vertexes, edges);
         }
-    }
-
-    private Graph(List<Vertex> vertexes, List<Edge> edges) {
-        this.vertexes = Collections.unmodifiableList(vertexes);
-        this.edges = Collections.unmodifiableList(edges);
     }
 
 
