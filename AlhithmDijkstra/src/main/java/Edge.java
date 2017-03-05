@@ -1,3 +1,7 @@
+/**
+ *
+ */
+
 public class Edge {
     private final String id;
     private final Vertex source;
@@ -11,14 +15,26 @@ public class Edge {
         this.weight = weight;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getId() {
         return id;
     }
 
+    /**
+     *
+     * @return
+     */
     public Vertex getDestination() {
         return destination;
     }
 
+    /**
+     *
+     * @return
+     */
     public Vertex getSource() {
         return source;
     }

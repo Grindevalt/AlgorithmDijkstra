@@ -11,8 +11,18 @@ public class Vertex {
         this.name = name;
     }
 
+    /**
+     * Getter for property 'name'.
+     *
+     * @return Value for property 'name'.
+     */
+    public String getName() {
+        return name;
+    }
+
     public Vertex(int id) {
         this.id = id;
+
         this.name = "unnamed";
     }
 

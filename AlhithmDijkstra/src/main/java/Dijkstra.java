@@ -3,8 +3,15 @@ import java.util.*;
 /**
  * Created by Vlad Badilovskii on 24.02.2017.
  */
+
+/**
+ * Class Dijkstra implements al
+ * lala
+ * lala
+ * lala
+ *
+ */
 public class Dijkstra {
-    private final List<Vertex> nodes;
     private final List<Edge> edges;
     private Set<Vertex> settledNodes;
     private Set<Vertex> unSettledNodes;
@@ -12,10 +19,13 @@ public class Dijkstra {
     private Map<Vertex, Integer> distance;
 
     public Dijkstra(Graph graph) {
-        this.nodes = new ArrayList<>(graph.getVertexes());
         this.edges = new ArrayList<>(graph.getEdges());
     }
 
+    /**
+     *
+     * @param source
+     */
     public void execute(Vertex source) {
         settledNodes = new HashSet<>();
         unSettledNodes = new HashSet<>();
@@ -93,6 +103,11 @@ public class Dijkstra {
         }
     }
 
+    /**
+     *
+     * @param target
+     * @return
+     */
     public LinkedList<Vertex> getPath(Vertex target) {
         LinkedList<Vertex> path = new LinkedList<>();
         Vertex step = target;

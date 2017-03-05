@@ -6,6 +6,7 @@ import java.util.List;
  * Created by Vlad Badilovskii on 24.02.2017.
  */
 public class Graph {
+
     private final List<Vertex> vertexes;
     private final List<Edge> edges;
 
