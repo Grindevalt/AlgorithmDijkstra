@@ -1,8 +1,12 @@
+package com.AndersenLab.components;
+
 /**
- * Created by Vlad Badilovskii on 24.02.2017.
+ * Class for creating vertex object
+ *
+ * @author Vlad Badilovskii
+ * @version 1.0
  */
 public class Vertex {
-
     private final int id;
     private final String name;
 
